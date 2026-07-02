@@ -1,0 +1,47 @@
+### GET request to example server
+
+
+###
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "1234"
+}
+
+###
+GET http://localhost:8080/
+Authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTc4Mjg5MjgyMiwiZXhwIjoxNzgyODk2NDIyfQ.9b3NCL5tvjokDS1O-385J3hRwtZgDyaFfog0o8idb5o
+
+###
+GET http://localhost:8080/api/security/all
+
+###
+GET http://localhost:8080/api/security/member
+Authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTc4Mjg2NzYyOSwiZXhwIjoxNzgyODY3OTI5fQ.H-LhrWwVZ3zCCdGLYzj3--t5PLZtSik9zTvd54EE2Uk
+
+###
+GET http://localhost:8080/api/security/admin
+Authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTc4Mjg2NzYyOSwiZXhwIjoxNzgyODY3OTI5fQ.H-LhrWwVZ3zCCdGLYzj3--t5PLZtSik9zTvd54EE2Uk
+
+###
+POST http://localhost:8080/api/security/xxx
+Authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTc4Mjg2Nzk4MSwiZXhwIjoxNzgyODY4MjgxfQ.ITO618cuMVT_5EJHFauePyrMt1nVakE1B57Zi-YX5DE
+
+###
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "1234"
+}
+
+###
+GET http://localhost:8080/api/security/admin
+Authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc4Mjg2ODA1MSwiZXhwIjoxNzgyODY4MzUxfQ.29rp9FKi4KfRkMRRLaaGsIPM2NT1PI_855X9KEkv85c
+
+
+###
+GET http://localhost:8080/api/board/

@@ -1,0 +1,41 @@
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Java / Gradle
+.gradle/
+build/
+out/
+bin/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Node / Vue
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.tsbuildinfo
+.eslintcache
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Test / Tool cache
+.cypress/
+cypress/videos/
+cypress/screenshots/
+__screenshots__/
+*.timestamp-*-*.mjs
